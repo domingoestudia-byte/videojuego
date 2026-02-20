@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crownbreakers - Itch.io</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col">
+    
+    <!-- NAVBAR PRINCIPAL -->
+    <nav class="bg-gray-800 border-b border-gray-700 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo Itch.io -->
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-bold text-red-500">furro.io</a>
+                </div>
+                
+                <!-- Search -->
+                <div class="flex-1 max-w-lg mx-8">
+                    <input type="text" placeholder="Buscar juegos..." class="w-full bg-gray-700 rounded px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-red-500">
+                </div>
+                
+                <!-- User Menu -->
+                <div class="flex items-center space-x-4">
+                    <button class="text-gray-300 hover:text-white">Subir</button>
+                    <button class="text-gray-300 hover:text-white">Iniciar sesión</button>
+                    <button class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded text-sm font-medium">Registrarse</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECCIÓN HERO / GAME HEADER -->
+    <header class="bg-gray-800 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-8">
+                
+                <!-- ASSET PRINCIPAL (Video/Imagen) -->
+                <div class="lg:w-2/3">
+                    <div class="aspect-video bg-gray-700 rounded-lg overflow-hidden relative group cursor-pointer">
+                        <!-- Placeholder para video o imagen principal -->
+                        <img src="game-screenshot.jpg" alt="Crownbreakers" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 group-hover:bg-opacity-30 transition">
+                            <div class="w-20 h-20 bg-white bg-opacity-90 rounded-full flex items-center justify-center">
+                                <svg class="w-10 h-10 text-gray-900 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M6.3 5.84a.75.75 0 00-1.06 1.06l4.78 4.78-4.78 4.78a.75.75 0 101.06 1.06l5.25-5.25a.75.75 0 000-1.06L6.3 5.84z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Thumbnails / Screenshots -->
+                    <div class="flex gap-2 mt-4 overflow-x-auto pb-2">
+                        <div class="w-32 h-20 bg-gray-700 rounded flex-shrink-0 cursor-pointer hover:ring-2 hover:ring-red-500"></div>
+                        <div class="w-32 h-20 bg-gray-700 rounded flex-shrink-0 cursor-pointer hover:ring-2 hover:ring-red-500"></div>
+                        <div class="w-32 h-20 bg-gray-700 rounded flex-shrink-0 cursor-pointer hover:ring-2 hover:ring-red-500"></div>
+                        <div class="w-32 h-20 bg-gray-700 rounded flex-shrink-0 cursor-pointer hover:ring-2 hover:ring-red-500"></div>
+                    </div>
+                </div>
+
+                <!-- INFO DEL JUEGO -->
+                <div class="lg:w-1/3 flex flex-col">
+                    <!-- Título -->
+                    <h1 class="text-4xl font-bold mb-2">Crownbreakers</h1>
+                    
+                    <!-- Autor -->
+                    <div class="flex items-center mb-4">
+                        <span class="text-gray-400">por </span>
+                        <a href="#" class="ml-1 text-red-400 hover:text-red-300 font-medium">Sharkbomb Studios</a>
+                    </div>
+
+                    <!-- Tags -->
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 bg-gray-700 rounded-full text-xs">Acción</span>
+                        <span class="px-3 py-1 bg-gray-700 rounded-full text-xs">Roguelike</span>
+                        <span class="px-3 py-1 bg-gray-700 rounded-full text-xs">Multijugador</span>
+                    </div>
+
+                    <!-- Botón Principal -->
+                    <button class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-6 rounded-lg text-lg mb-4 transition">
+                        Descargar ahora
+                    </button>
+                    
+                    <!-- Precio/Gratis -->
+                    <p class="text-center text-gray-400 mb-6">Gratis / Paga lo que quieras</p>
+
+                    <!-- Stats -->
+                    <div class="grid grid-cols-3 gap-4 text-center border-t border-gray-700 pt-4">
+                        <div>
+                            <div class="text-2xl font-bold">4.8</div>
+                            <div class="text-xs text-gray-400">Rating</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold">15K</div>
+                            <div class="text-xs text-gray-400">Descargas</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold">Windows</div>
+                            <div class="text-xs text-gray-400">Plataforma</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
+        <div class="flex flex-col lg:flex-row gap-8">
+            
+            <!-- COLUMNA IZQUIERDA: Descripción -->
+            <div class="lg:w-2/3">
+                <section class="bg-gray-800 rounded-lg p-6 mb-6">
+                    <h2 class="text-2xl font-bold mb-4">Sobre este juego</h2>
+                    <div class="prose prose-invert max-w-none">
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            Descripción del juego Crownbreakers...
+                        </p>
+                        <!-- Contenido rich text -->
+                    </div>
+                </section>
+
+                <!-- Descargas -->
+                <section class="bg-gray-800 rounded-lg p-6 mb-6">
+                    <h2 class="text-2xl font-bold mb-4">Descargas</h2>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center bg-gray-700 p-4 rounded hover:bg-gray-600 cursor-pointer">
+                            <div class="flex items-center gap-3">
+                                <span class="text-2xl">🪟</span>
+                                <div>
+                                    <div class="font-medium">Crownbreakers v1.0</div>
+                                    <div class="text-sm text-gray-400">Windows 85 MB</div>
+                                </div>
+                            </div>
+                            <button class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded text-sm">Descargar</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Comentarios -->
+                <section class="bg-gray-800 rounded-lg p-6">
+                    <h2 class="text-2xl font-bold mb-4">Comentarios</h2>
+                    <!-- Formulario comentario -->
+                    <div class="mb-6">
+                        <textarea class="w-full bg-gray-700 rounded-lg p-4 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500" rows="3" placeholder="Escribe un comentario..."></textarea>
+                        <button class="mt-2 bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded text-sm">Publicar comentario</button>
+                    </div>
+                    <!-- Lista comentarios -->
+                </section>
+            </div>
+
+            <!-- COLUMNA DERECHA: Sidebar -->
+            <aside class="lg:w-1/3 space-y-6">
+                
+                <!-- Información técnica -->
+                <div class="bg-gray-800 rounded-lg p-6">
+                    <h3 class="font-bold mb-4 text-gray-200">Información</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex justify-between">
+                            <span class="text-gray-400">Estado</span>
+                            <span class="text-green-400">En desarrollo</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="text-gray-400">Autor</span>
+                            <a href="#" class="text-red-400 hover:underline">Sharkbomb</a>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="text-gray-400">Género</span>
+                            <span>Acción, Roguelike</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="text-gray-400">Fecha</span>
+                            <span>20 Feb 2026</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Otros juegos del autor -->
+                <div class="bg-gray-800 rounded-lg p-6">
+                    <h3 class="font-bold mb-4">Más de Sharkbomb</h3>
+                    <div class="space-y-4">
+                        <a href="#" class="flex gap-3 group">
+                            <div class="w-16 h-16 bg-gray-700 rounded flex-shrink-0"></div>
+                            <div>
+                                <div class="font-medium group-hover:text-red-400 transition">Otro Juego</div>
+                                <div class="text-xs text-gray-400">Gratis</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div class="bg-gray-800 rounded-lg p-6">
+                    <h3 class="font-bold mb-4">Links</h3>
+                    <div class="space-y-2">
+                        <a href="#" class="block text-red-400 hover:underline text-sm">Sitio web</a>
+                        <a href="#" class="block text-red-400 hover:underline text-sm">Twitter</a>
+                        <a href="#" class="block text-red-400 hover:underline text-sm">Discord</a>
+                    </div>
+                </div>
+
+            </aside>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-800 border-t border-gray-700 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-gray-400 text-sm mb-4 md:mb-0">
+                    © 2026 itch.io · <a href="#" class="hover:text-white">Términos</a> · <a href="#" class="hover:text-white">Privacidad</a>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white">Twitter</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Discord</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Blog</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
