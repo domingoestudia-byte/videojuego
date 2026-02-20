@@ -18,7 +18,7 @@ jobs:
       - name: Install dependencies
         run: |
           npm install -D tailwindcss
-          npx tailwindcss -i ./input.css -o ./output.css --minify
+          npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify
           
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
